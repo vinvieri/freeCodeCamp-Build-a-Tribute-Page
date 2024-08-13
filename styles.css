@@ -1,0 +1,188 @@
+:root {
+  --dark-purple: #5f3dc4;
+  --light-purple: #9775fa;
+  --dark-gray: #5e636f;
+  --medium-gray: #8e97a3;
+  --light-gray: #f6f7f8;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.content-container {
+  margin: 2.4rem 1.2rem;
+}
+
+main {
+  background: linear-gradient(
+    145deg,
+    rgba(173, 181, 189, 1) 10%,
+    rgba(219, 222, 226, 1) 50%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  padding: 1.6rem;
+  border-radius: 0.8rem;
+  margin-bottom: 2.4rem;
+}
+
+ul,
+blockquote {
+  max-width: 62rem;
+  text-align: left;
+}
+
+/* HEADER */
+header {
+  margin-bottom: 3.2rem;
+}
+
+#title {
+  font-size: 6.2rem;
+  font-family: "EB Garamond", serif;
+}
+
+.description {
+  font-size: 1.8rem;
+}
+
+/* FIGURE */
+#img-div {
+  background-color: var(--light-gray);
+  padding: 1.2rem;
+  border-radius: 0.4rem;
+  margin-bottom: 4.8rem;
+}
+
+#image {
+  display: block;
+  max-width: 100%;
+  border-radius: 0.4rem;
+  margin: 0 auto 1.2rem auto;
+}
+
+/* TIMELINE */
+h2 {
+  font-size: 3rem;
+  font-family: "EB Garamond", serif;
+  margin-bottom: 3.2rem;
+}
+
+ul {
+  text-align: left;
+  margin: 0 auto 4.8rem auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+li span {
+  font-weight: 600;
+}
+
+/* QUOTE */
+blockquote {
+  margin: 0 auto;
+  font-style: italic;
+  text-align: left;
+  margin-bottom: 4.8rem;
+}
+
+blockquote p:first-child {
+  margin-bottom: 1.6rem;
+}
+
+/* LINK */
+.link {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0 auto 2.4rem auto;
+}
+
+#tribute-link:link,
+#tribute-link:visited {
+  color: var(--light-purple);
+  text-decoration: none;
+  padding-bottom: 0.1rem;
+  border-bottom: 0.2rem solid transparent;
+  transition: all 0.4s;
+}
+
+#tribute-link:hover,
+#tribute-link:active {
+  color: var(--dark-purple);
+  border-bottom-color: currentColor;
+}
+
+/* FOOTER */
+footer {
+  display: flex;
+  justify-content: center;
+  gap: 8rem;
+}
+
+a:link .footer-icon,
+a:visited .footer-icon {
+  width: 4.8rem;
+  height: 4.8rem;
+  color: var(--medium-gray);
+  transition: all 0.4s;
+}
+
+a:hover .footer-icon,
+a:active .footer-icon {
+  color: var(--dark-gray);
+}
+
+/* MEDIA QUERY */
+@media (max-width: 48em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media (max-width: 40em) {
+  html {
+    font-size: 50%;
+  }
+
+  #title {
+    font-size: 5.2rem;
+  }
+
+  .description {
+    font-size: 1.4rem;
+  }
+
+  #img-div {
+    margin-bottom: 4.8rem;
+  }
+
+  h2 {
+    font-size: 2.4rem;
+  }
+
+  ul,
+  blockquote {
+    max-width: 32rem;
+  }
+
+  .link {
+    max-width: 48rem;
+    font-size: 1.8rem;
+  }
+}
