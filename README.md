@@ -14,4 +14,4 @@
 
 #### 🔗 *freeCodeCamp [Tribute Page](https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-tribute-page-project/build-a-tribute-page)*
 
-#### 🔗 *Finished [Tribute Page](https://vinvieri.github.io/freeCodeCamp-Build-a-Tribute-Page/)*
+#### 🔗 *Finished [Tribute Page](https://vinvieri.github.io/freeCodeCamp-Tribute-Page/)*
